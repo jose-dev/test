@@ -80,7 +80,6 @@ DROP TABLE IF EXISTS order_items;
 CREATE TABLE order_items (
     order_item_id  BIGINT,
     order_id       BIGINT,
-    customer_id    BIGINT,
     quantity       BIGINT,
     sku_id         BIGINT
 );
