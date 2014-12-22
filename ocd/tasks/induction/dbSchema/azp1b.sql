@@ -60,6 +60,19 @@ ALTER TABLE inventory ADD CONSTRAINT inventory_pk PRIMARY KEY (inventory_id);
 
 
 --
+-- orders table
+--
+DROP TABLE IF EXISTS orders;
+
+CREATE TABLE orders (
+    order_id       BIGINT,
+    customer_id    BIGINT
+);
+
+ALTER TABLE orders ADD CONSTRAINT order_pk PRIMARY KEY (order_id);
+
+
+--
 -- order_items table
 --
 DROP TABLE IF EXISTS order_items;
